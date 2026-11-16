@@ -135,3 +135,16 @@
 .mini-flower-2{bottom:24px;left:22px;transform:rotate(-12deg);opacity:.14}
 .mini-flower-3{top:26px;right:30px;transform:rotate(-9deg);opacity:.15}
 @media(max-width:700px){.mini-flower{width:48px;height:70px;opacity:.1}.mini-flower-1,.mini-flower-3{right:9px;top:12px}.mini-flower-2{left:8px;bottom:12px}}
+
+/* Consistent, restrained contact footer across all pages */
+footer .footer-layout{align-items:start;gap:clamp(32px,5vw,90px)}
+footer .footer-intro{min-width:0}
+footer .footer-intro h2{font:400 clamp(28px,3.1vw,40px)/1.12 var(--serif);letter-spacing:-.02em;margin:19px 0 12px}
+footer .footer-right{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:30px;padding:6px 0 0;min-width:0}
+footer .footer-contact-links{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+footer .footer-contact-links a{font:500 14px/1.45 var(--sans);letter-spacing:0;overflow-wrap:anywhere;border:0;padding:0;text-decoration:none;opacity:.92}
+footer .footer-contact-links a:hover{text-decoration:underline;text-underline-offset:4px;opacity:1}
+footer .footer-location{font-size:13px;opacity:.72;margin-bottom:3px}
+footer .footer-right>a.back-top{font:600 11px/1.5 var(--sans);letter-spacing:.09em;border:0;padding:0}
+footer .copyright{display:block}
+@media(max-width:700px){footer .footer-layout{display:block}footer .footer-right{padding:22px 0 0;gap:30px}footer .footer-intro h2{font-size:30px}}
