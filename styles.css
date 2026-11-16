@@ -126,3 +126,12 @@
  .education-entry{padding:26px 0 32px}
  .education-activity{padding:24px 0}
 }
+
+/* Restrained botanical corner details for the Education page */
+.education-section,.education-involvement,.education-campus{position:relative;overflow:hidden;isolation:isolate}
+.education-section>.wrap,.education-involvement>.wrap,.education-campus>.wrap{position:relative;z-index:1}
+.mini-flower{position:absolute;width:72px;height:105px;stroke:var(--olive);stroke-width:1.05;stroke-linecap:round;stroke-linejoin:round;opacity:.19;pointer-events:none;z-index:0}
+.mini-flower-1{top:26px;right:28px;transform:rotate(12deg)}
+.mini-flower-2{bottom:24px;left:22px;transform:rotate(-12deg);opacity:.14}
+.mini-flower-3{top:26px;right:30px;transform:rotate(-9deg);opacity:.15}
+@media(max-width:700px){.mini-flower{width:48px;height:70px;opacity:.1}.mini-flower-1,.mini-flower-3{right:9px;top:12px}.mini-flower-2{left:8px;bottom:12px}}
