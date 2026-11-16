@@ -90,3 +90,39 @@
 /* Homepage resume button */
 .button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:13px 18px;border:1px solid var(--olive);font-size:13px;font-weight:600;color:var(--olive);transition:background .2s,color .2s,transform .2s}
 .button-secondary:hover{background:var(--olive);color:var(--white);transform:translateY(-2px)}
+
+
+/* Education page — architectural editorial layout */
+.education-page-title{font:400 clamp(40px,4vw,60px)/1.04 var(--serif);letter-spacing:-.025em;margin:23px 0 20px}
+.education-entries{border-top:1px solid var(--line)}
+.education-entry{display:grid;grid-template-columns:30% minmax(0,1fr);gap:7%;padding:36px 0 42px;border-bottom:1px solid var(--line)}
+.education-label,.education-courses h3,.activity-date{font-size:12px;letter-spacing:.06em;font-weight:600}
+.education-entry-side p{margin:12px 0 0;color:var(--muted);font-size:14px}
+.education-entry-side .education-gpa{color:var(--olive);font-weight:600}
+.education-entry-main h2{font:400 clamp(26px,3vw,38px)/1.15 var(--serif);margin:0 0 7px;letter-spacing:-.02em}
+.education-degree{font-size:17px;margin:0 0 20px}
+.education-detail{font-size:15px;line-height:1.75;max-width:680px;margin:0 0 22px;color:var(--muted)}
+.education-detail strong{color:var(--olive)}
+.education-detail a,.activity-link a{color:var(--olive);text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.education-courses{border-top:1px solid var(--line);padding-top:18px}
+.education-courses h3{margin:0 0 10px;text-transform:uppercase}
+.education-courses p{font-size:14px;line-height:1.9;color:var(--muted);margin:0}
+.education-involvement{background:var(--white)}
+.education-activity-list{border-top:1px solid var(--line)}
+.education-activity{display:grid;grid-template-columns:34% minmax(0,1fr);gap:6%;border-bottom:1px solid var(--line);padding:25px 0}
+.education-activity h3{font:400 26px/1.2 var(--serif);margin:0 0 5px}
+.education-activity .activity-affiliation{font-weight:600;font-size:14px;color:var(--olive);margin:0 0 6px}
+.education-activity .activity-date{display:block;color:var(--muted);font-size:12px;letter-spacing:0;margin-top:10px}
+.education-activity>p,.education-activity>ul{font-size:15px;line-height:1.8;color:var(--muted);margin:0;max-width:770px}
+.education-activity>ul{padding-left:20px}
+.education-activity>ul li+li{margin-top:9px}
+.education-activity .activity-link{margin:12px 0 0;font-size:13px}
+.education-campus{background:var(--ivory)}
+/* Preserve a clean photography presentation even if an older HTML page is cached */
+.portrait-caption,.personal-gallery figcaption{display:none!important}
+.site-header nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
+@media(max-width:800px){
+ .education-entry,.education-activity{grid-template-columns:1fr;gap:16px}
+ .education-entry{padding:26px 0 32px}
+ .education-activity{padding:24px 0}
+}
