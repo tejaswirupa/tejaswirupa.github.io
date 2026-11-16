@@ -86,3 +86,7 @@
  .experience-row .expand-symbol{grid-column:2;grid-row:1}
  .achievement-list li{font-size:14px;line-height:1.7}
 }
+
+/* Homepage resume button */
+.button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:13px 18px;border:1px solid var(--olive);font-size:13px;font-weight:600;color:var(--olive);transition:background .2s,color .2s,transform .2s}
+.button-secondary:hover{background:var(--olive);color:var(--white);transform:translateY(-2px)}
