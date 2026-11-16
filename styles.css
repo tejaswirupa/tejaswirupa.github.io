@@ -148,3 +148,17 @@ footer .footer-location{font-size:13px;opacity:.72;margin-bottom:3px}
 footer .footer-right>a.back-top{font:600 11px/1.5 var(--sans);letter-spacing:.09em;border:0;padding:0}
 footer .copyright{display:block}
 @media(max-width:700px){footer .footer-layout{display:block}footer .footer-right{padding:22px 0 0;gap:30px}footer .footer-intro h2{font-size:30px}}
+
+/* Gentle heading scale refinement: retain typographic hierarchy and fonts */
+.hero h1{font-size:clamp(44px,5.1vw,74px)}
+.section-intro h2,.section-top h2,.about-grid h2{font-size:clamp(36px,3.7vw,54px)}
+.education-page-title{font-size:clamp(36px,3.7vw,54px)}
+.education-entry-main h2{font-size:clamp(24px,2.8vw,35px)}
+.education-activity h3{font-size:24px}
+footer .footer-intro h2{font-size:clamp(26px,2.9vw,36px)}
+@media(max-width:950px){.hero h1{font-size:clamp(39px,5.1vw,59px)}}
+@media(max-width:700px){
+ .hero h1{font-size:clamp(43px,10vw,63px)}
+ .section-intro h2,.section-top h2,.about-grid h2,.education-page-title{font-size:clamp(35px,8.5vw,41px)}
+ footer .footer-intro h2{font-size:28px}
+}
